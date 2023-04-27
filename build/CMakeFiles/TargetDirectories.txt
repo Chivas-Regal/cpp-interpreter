@@ -1,0 +1,4 @@
+/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build/CMakeFiles/analysers.dir
+/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build/CMakeFiles/analyserslib.dir
+/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build/CMakeFiles/edit_cache.dir
+/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build/CMakeFiles/rebuild_cache.dir
