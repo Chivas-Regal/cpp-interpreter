@@ -1,13 +1,13 @@
 [
 {
   "directory": "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build",
-  "command": "/usr/bin/clang++ -Danalysers_EXPORTS -I\"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/include\" -I/usr/include/mysql -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fPIC -std=gnu++20 -o CMakeFiles/analysers.dir/src/any.cpp.o -c \"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/any.cpp\"",
-  "file": "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/any.cpp"
+  "command": "/usr/bin/clang++ -Danalysers_EXPORTS -I\"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/include\" -I/usr/include/mysql -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fPIC -std=gnu++20 -o CMakeFiles/analysers.dir/src/datatype.cpp.o -c \"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/datatype.cpp\"",
+  "file": "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/datatype.cpp"
 },
 {
   "directory": "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build",
-  "command": "/usr/bin/clang++ -Danalysers_EXPORTS -I\"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/include\" -I/usr/include/mysql -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fPIC -std=gnu++20 -o CMakeFiles/analysers.dir/src/eval_tree.cpp.o -c \"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/eval_tree.cpp\"",
-  "file": "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/eval_tree.cpp"
+  "command": "/usr/bin/clang++ -Danalysers_EXPORTS -I\"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/include\" -I/usr/include/mysql -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fPIC -std=gnu++20 -o CMakeFiles/analysers.dir/src/eval-tree.cpp.o -c \"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/eval-tree.cpp\"",
+  "file": "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/eval-tree.cpp"
 },
 {
   "directory": "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build",
@@ -16,13 +16,13 @@
 },
 {
   "directory": "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build",
-  "command": "/usr/bin/clang++ -Danalysers_EXPORTS -I\"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/include\" -I/usr/include/mysql -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fPIC -std=gnu++20 -o CMakeFiles/analysers.dir/src/lexical_analyser.cpp.o -c \"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/lexical_analyser.cpp\"",
-  "file": "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/lexical_analyser.cpp"
+  "command": "/usr/bin/clang++ -Danalysers_EXPORTS -I\"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/include\" -I/usr/include/mysql -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fPIC -std=gnu++20 -o CMakeFiles/analysers.dir/src/lexical.cpp.o -c \"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/lexical.cpp\"",
+  "file": "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/lexical.cpp"
 },
 {
   "directory": "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build",
-  "command": "/usr/bin/clang++ -Danalysers_EXPORTS -I\"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/include\" -I/usr/include/mysql -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fPIC -std=gnu++20 -o CMakeFiles/analysers.dir/src/val.cpp.o -c \"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/val.cpp\"",
-  "file": "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/val.cpp"
+  "command": "/usr/bin/clang++ -Danalysers_EXPORTS -I\"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/include\" -I/usr/include/mysql -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fPIC -std=gnu++20 -o CMakeFiles/analysers.dir/src/statements-group.cpp.o -c \"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/statements-group.cpp\"",
+  "file": "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/statements-group.cpp"
 },
 {
   "directory": "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build",

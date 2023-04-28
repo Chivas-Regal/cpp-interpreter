@@ -1,20 +1,21 @@
 #pragma once
 
 #include "kv.h"
-#include "any.h"
+#include "datatype.h"
 
 #include <cstdio>
 #include <map>
 #include <string>
 
-class lexical_analyser {
+class Lexical {
 public:
-	lexical_analyser();
-	~lexical_analyser();
+	Lexical();
+	~Lexical();
 
     void parser_word (char ch);
     void parser_number (char ch);
     void parser_operator (char ch);
+    void parser_str (char ch);
 	std::vector<Any> lexer(const std::string& str);
 private:
 	std::string detect_str;		///< 待分析字符串

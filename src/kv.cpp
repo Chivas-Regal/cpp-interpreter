@@ -1,5 +1,11 @@
 #include "../include/kv.h"
 
+/** 
+ * @brief 单字符表
+ *  
+ * @param[in] c 可出现的单字符
+ * @return TokenCode 单字符对应 TokenCode 里面哪一项
+*/ 
 TokenCode oneCharTokenMeaning (char c) {
 	make_KV(c, '=', TK_ASSIGN)
 	make_KV(c, '{', KW_BEGIN)
@@ -21,7 +27,12 @@ TokenCode oneCharTokenMeaning (char c) {
 	return TK_UNDEF;
 }
 
-
+/** 
+ * @brief 关键字表
+ * 
+ * @param[in] str 关键字字符串
+ * @return TokenCode 关键字对应 TokenCode 里面的哪一项
+*/
 TokenCode keyWordsID (const std::string& str) {
 	make_KV(str, "MAIN", 	KW_MAIN)
 	make_KV(str, "IF",	 	KW_IF)
@@ -35,6 +46,18 @@ TokenCode keyWordsID (const std::string& str) {
 	return TK_UNDEF;
 }
 
+/**
+ * @brief 优先级
+ * 
+ * @param c 运算/关系符
+        * @details  || 传入 '|'
+        *           && 传入 '&'
+        *           == 传入 'a'
+        *           <= 传入 'b'
+        *           >= 传入 'c'
+        *           != 传入 'd'
+ * @return int 返回优先级
+ */
 int calcLevel (char c) {
     switch (c) {
         case '!': return 5;

@@ -166,53 +166,53 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyserslib.dir/build.make CMakeFiles/analyserslib.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/any.o: src/any.cpp.o
-.PHONY : src/any.o
+src/datatype.o: src/datatype.cpp.o
+.PHONY : src/datatype.o
 
 # target to build an object file
-src/any.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/any.cpp.o
-.PHONY : src/any.cpp.o
+src/datatype.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/datatype.cpp.o
+.PHONY : src/datatype.cpp.o
 
-src/any.i: src/any.cpp.i
-.PHONY : src/any.i
+src/datatype.i: src/datatype.cpp.i
+.PHONY : src/datatype.i
 
 # target to preprocess a source file
-src/any.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/any.cpp.i
-.PHONY : src/any.cpp.i
+src/datatype.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/datatype.cpp.i
+.PHONY : src/datatype.cpp.i
 
-src/any.s: src/any.cpp.s
-.PHONY : src/any.s
+src/datatype.s: src/datatype.cpp.s
+.PHONY : src/datatype.s
 
 # target to generate assembly for a file
-src/any.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/any.cpp.s
-.PHONY : src/any.cpp.s
+src/datatype.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/datatype.cpp.s
+.PHONY : src/datatype.cpp.s
 
-src/eval_tree.o: src/eval_tree.cpp.o
-.PHONY : src/eval_tree.o
+src/eval-tree.o: src/eval-tree.cpp.o
+.PHONY : src/eval-tree.o
 
 # target to build an object file
-src/eval_tree.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/eval_tree.cpp.o
-.PHONY : src/eval_tree.cpp.o
+src/eval-tree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/eval-tree.cpp.o
+.PHONY : src/eval-tree.cpp.o
 
-src/eval_tree.i: src/eval_tree.cpp.i
-.PHONY : src/eval_tree.i
+src/eval-tree.i: src/eval-tree.cpp.i
+.PHONY : src/eval-tree.i
 
 # target to preprocess a source file
-src/eval_tree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/eval_tree.cpp.i
-.PHONY : src/eval_tree.cpp.i
+src/eval-tree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/eval-tree.cpp.i
+.PHONY : src/eval-tree.cpp.i
 
-src/eval_tree.s: src/eval_tree.cpp.s
-.PHONY : src/eval_tree.s
+src/eval-tree.s: src/eval-tree.cpp.s
+.PHONY : src/eval-tree.s
 
 # target to generate assembly for a file
-src/eval_tree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/eval_tree.cpp.s
-.PHONY : src/eval_tree.cpp.s
+src/eval-tree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/eval-tree.cpp.s
+.PHONY : src/eval-tree.cpp.s
 
 src/kv.o: src/kv.cpp.o
 .PHONY : src/kv.o
@@ -238,53 +238,53 @@ src/kv.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/kv.cpp.s
 .PHONY : src/kv.cpp.s
 
-src/lexical_analyser.o: src/lexical_analyser.cpp.o
-.PHONY : src/lexical_analyser.o
+src/lexical.o: src/lexical.cpp.o
+.PHONY : src/lexical.o
 
 # target to build an object file
-src/lexical_analyser.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/lexical_analyser.cpp.o
-.PHONY : src/lexical_analyser.cpp.o
+src/lexical.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/lexical.cpp.o
+.PHONY : src/lexical.cpp.o
 
-src/lexical_analyser.i: src/lexical_analyser.cpp.i
-.PHONY : src/lexical_analyser.i
+src/lexical.i: src/lexical.cpp.i
+.PHONY : src/lexical.i
 
 # target to preprocess a source file
-src/lexical_analyser.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/lexical_analyser.cpp.i
-.PHONY : src/lexical_analyser.cpp.i
+src/lexical.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/lexical.cpp.i
+.PHONY : src/lexical.cpp.i
 
-src/lexical_analyser.s: src/lexical_analyser.cpp.s
-.PHONY : src/lexical_analyser.s
+src/lexical.s: src/lexical.cpp.s
+.PHONY : src/lexical.s
 
 # target to generate assembly for a file
-src/lexical_analyser.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/lexical_analyser.cpp.s
-.PHONY : src/lexical_analyser.cpp.s
+src/lexical.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/lexical.cpp.s
+.PHONY : src/lexical.cpp.s
 
-src/val.o: src/val.cpp.o
-.PHONY : src/val.o
+src/statements-group.o: src/statements-group.cpp.o
+.PHONY : src/statements-group.o
 
 # target to build an object file
-src/val.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/val.cpp.o
-.PHONY : src/val.cpp.o
+src/statements-group.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/statements-group.cpp.o
+.PHONY : src/statements-group.cpp.o
 
-src/val.i: src/val.cpp.i
-.PHONY : src/val.i
+src/statements-group.i: src/statements-group.cpp.i
+.PHONY : src/statements-group.i
 
 # target to preprocess a source file
-src/val.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/val.cpp.i
-.PHONY : src/val.cpp.i
+src/statements-group.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/statements-group.cpp.i
+.PHONY : src/statements-group.cpp.i
 
-src/val.s: src/val.cpp.s
-.PHONY : src/val.s
+src/statements-group.s: src/statements-group.cpp.s
+.PHONY : src/statements-group.s
 
 # target to generate assembly for a file
-src/val.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/val.cpp.s
-.PHONY : src/val.cpp.s
+src/statements-group.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/statements-group.cpp.s
+.PHONY : src/statements-group.cpp.s
 
 # Help Target
 help:
@@ -299,21 +299,21 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/any.o"
-	@echo "... src/any.i"
-	@echo "... src/any.s"
-	@echo "... src/eval_tree.o"
-	@echo "... src/eval_tree.i"
-	@echo "... src/eval_tree.s"
+	@echo "... src/datatype.o"
+	@echo "... src/datatype.i"
+	@echo "... src/datatype.s"
+	@echo "... src/eval-tree.o"
+	@echo "... src/eval-tree.i"
+	@echo "... src/eval-tree.s"
 	@echo "... src/kv.o"
 	@echo "... src/kv.i"
 	@echo "... src/kv.s"
-	@echo "... src/lexical_analyser.o"
-	@echo "... src/lexical_analyser.i"
-	@echo "... src/lexical_analyser.s"
-	@echo "... src/val.o"
-	@echo "... src/val.i"
-	@echo "... src/val.s"
+	@echo "... src/lexical.o"
+	@echo "... src/lexical.i"
+	@echo "... src/lexical.s"
+	@echo "... src/statements-group.o"
+	@echo "... src/statements-group.i"
+	@echo "... src/statements-group.s"
 .PHONY : help
 
 

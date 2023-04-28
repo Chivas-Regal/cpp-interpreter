@@ -1,1 +1,28 @@
-zyz * (3 * (1 + 3.11114))#
+INPUT (ope);
+s1 = "hello";
+s2 = "world";
+IF (ope == 1) {
+    OUTPUT("HELLO WORLD");
+} ELIF (ope == 2) {
+    OUTPUT(s1 + " " + s2);
+} ELSE {
+    OUTPUT("HELLO WORLD", s1 + " " + s2);
+}
+OUTPUT("");
+
+INPUT (n);
+x = 1;
+y = 1;
+i = 1;
+WHILE (i <= n) {
+    OUTPUT(x);
+    i = i + 1;
+    t = y;
+    y = x + y;
+    x = t;
+}
+OUTPUT("");
+
+a = 1;
+b = 1;
+OUTPUT(a + 2 * (1 + 3) * b + a * b);

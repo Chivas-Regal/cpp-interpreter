@@ -1,29 +1,29 @@
-#include "../include/lexical_analyser.h"
+#include "../include/lexical.h"
 #include "../include/kv.h"
 
 #include <iostream>
 
-// @brief 构造函数
-// @parma 文件名
-//     - file: 	利用传进来的文件名来初始化文件指针
-//	   - code:	还没扫到任何字符串，初始化为"未定义"
-//	   - row :  一开始就是第一行
-lexical_analyser::lexical_analyser():
+Lexical::Lexical():
 		detect_str(""),
         detect_id(0),
 		code(TK_UNDEF),
         token("")
 {}
-// @brief 析构函数
-// 关闭文件
-lexical_analyser::~lexical_analyser() {
+
+Lexical::~Lexical() {
     detect_str.clear();
     token.clear();
 }
 
-// @brief 工作函数（解析）
-// 一个单词一个单词去查，获得一个完整单词后输出解析结果
-std::vector<Any> lexical_analyser::lexer(const std::string& str) {
+/**
+ * @brief 工作函数（解析）
+ * 
+ * @details 一个一个单词去查，把所有单词按顺序收好之后返回出来
+ * 
+ * @param str 待解析字符串
+ * @return std::vector<Any> 解析好的顺序单词集
+ */
+std::vector<Any> Lexical::lexer(const std::string& str) {
     detect_str = str + "#";
     detect_id = 0;
     code = TK_UNDEF;
@@ -39,7 +39,9 @@ std::vector<Any> lexical_analyser::lexer(const std::string& str) {
 			parser_word(ch);
 		} else if (std::isdigit(ch)) { 			// 无符号整型打头，数字
 			parser_number(ch);
-		} else {
+        } else if (ch == '"') {
+            parser_str(ch);
+        } else {
 			parser_operator(ch);
 		}
         
@@ -48,6 +50,8 @@ std::vector<Any> lexical_analyser::lexer(const std::string& str) {
         } else {
             if (code == TK_IDENT || (KW_MAIN <= code && code <= KW_WHILE) || code == TK_SEMOCOLON || code == TK_COMMA)
                 ret.push_back(Any(token));
+            else if (code == TK_STR)
+                ret.push_back(Any(token, STRING));
             else if (code == TK_INT) 
                 ret.push_back(Any(std::stoi(token)));
             else if (code == TK_DOUBLE)
@@ -74,7 +78,12 @@ std::vector<Any> lexical_analyser::lexer(const std::string& str) {
     return ret;
 }
 
-void lexical_analyser::parser_number(char ch) {
+/**
+ * @brief 解析出一个数值
+ * 
+ * @param ch 首字符
+ */
+void Lexical::parser_number(char ch) {
     bool isDouble = false;
     token = "";
     while (std::isdigit(ch)) {
@@ -97,7 +106,12 @@ void lexical_analyser::parser_number(char ch) {
         code = TK_INT;
 }
 
-void lexical_analyser::parser_word(char ch) {
+/**
+ * @brief 解析出来一个 标识符 or 关键字
+ * 
+ * @param ch 首字符
+ */
+void Lexical::parser_word(char ch) {
     token = "";
     while (std::isalpha(ch) || std::isdigit(ch)) {
         token += ch;
@@ -111,7 +125,12 @@ void lexical_analyser::parser_word(char ch) {
         code = TokenCode(keyWordsID(token));
 }
 
-void lexical_analyser::parser_operator(char ch) {
+/**
+ * @brief 解析出来一个操作符
+ * 
+ * @param ch 首字符
+ */
+void Lexical::parser_operator(char ch) {
     token = "";
     // 先提取从 ch 开始的两个字符
     detect_id --;
@@ -147,4 +166,19 @@ void lexical_analyser::parser_operator(char ch) {
             code = TK_UNDEF;
         token = ch;
     }
+}
+
+/**
+ * @brief 解析字符串常量
+ * 
+ * @param ch 首字符 "
+ */
+void Lexical::parser_str(char ch) {
+    token = "";
+    while (detect_id < detect_str.size() && detect_str[detect_id] != '"') {
+        token += detect_str[detect_id];
+        detect_id ++;
+    }
+    code = TK_STR;
+    detect_id ++;
 }
