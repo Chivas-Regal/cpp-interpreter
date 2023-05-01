@@ -45,31 +45,49 @@ Val EvalTreeNode::eval(std::map<std::string, Val>& var_mp) {
  *                  需要按序传入，并保证语法正确
  */
 Val EvalTree::Expression(const std::vector<Any>& words) {
-    // 清空
-    while (!stk_num.empty())
-        stk_num.pop();
-    while (!stk_ope.empty())
-        stk_ope.pop();
+    /*! 要在局部建，然后建树的时候传引用过去，不然可能会导致类似于 “递归调用修改全局” 的问题 */
+    std::stack<EvalTreeNode*>   stk_num;    ///< 非运算符栈
+    std::stack<char>            stk_ope;    ///< 运算符栈
 
-    for (auto it : words) {
-        if (it.type == VAR && keyWordsID(it.var)) 
+    for (int i = 0; i < words.size(); i ++) {
+        if (words[i].type == VAR && keyWordsID(words[i].var)) {
             continue;
-        if (it.type == OPE) {
-            if (it.ope == '(') {
-                stk_ope.push(it.ope);
-            } else if (it.ope == ')') {
-                while (!stk_ope.empty() && stk_ope.top() != '(') addNode();
+        } else if (words[i].type == VAR && i + 1 < words.size() && words[i + 1].type == OPE && words[i + 1].ope == '(') {
+            // 遇到 标识符( 的形式，后面一定是函数的调用部分
+            int blk = 0;
+            std::vector<Any> program_cb_v;
+            while (true) {
+                program_cb_v.push_back(words[i]);
+                if (words[i].type == OPE && words[i].ope == '(') {
+                    blk ++;
+                } else if (words[i].type == OPE && words[i].ope == ')') {
+                    blk --;
+                    if (blk == 0) break;
+                }
+                i ++;
+            }
+            // 解析到的传回去Function()获取参数，并把参数当成 Val 压入 stk_num 中
+            Val cb = callback(program_cb_v);
+            stk_num.push(new EvalTreeNode(Any(cb)));
+        } else if (words[i].type == OPE) {
+            if (words[i].ope == '(') {
+                stk_ope.push(words[i].ope);
+            } else if (words[i].ope == ')') {
+                while (!stk_ope.empty() && stk_ope.top() != '(')
+                    addNode(stk_num, stk_ope);
                 stk_ope.pop();
             } else {
-                while (!stk_ope.empty() && calcLevel(it.ope) <= calcLevel(stk_ope.top())) 
-                    addNode();
-                stk_ope.push(it.ope);
+                // 让操作符形成单调栈
+                while (!stk_ope.empty() && calcLevel(words[i].ope) <= calcLevel(stk_ope.top()))
+                    addNode(stk_num, stk_ope);
+                stk_ope.push(words[i].ope);
             }
         } else {
-            stk_num.push(new EvalTreeNode(it));
+            stk_num.push(new EvalTreeNode(words[i]));
         }
     }
+
     while (!stk_ope.empty()) 
-        addNode();
+        addNode(stk_num, stk_ope);
     return stk_num.top()->eval(var_mp);
 }

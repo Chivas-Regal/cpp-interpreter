@@ -1,28 +1,50 @@
-INPUT (ope);
-s1 = "hello";
-s2 = "world";
-IF (ope == 1) {
-    OUTPUT("HELLO WORLD");
-} ELIF (ope == 2) {
-    OUTPUT(s1 + " " + s2);
-} ELSE {
-    OUTPUT("HELLO WORLD", s1 + " " + s2);
+FUNCTION hw (ope) {
+    s1 = "hello";
+    s2 = "world";
+    IF (ope == 1) {
+        i = 1;
+        WHILE (i <= 3) {
+            i = i + 1;
+            OUTPUT("HELLO WORLD");
+        }
+    } ELIF (ope == 2) {
+        OUTPUT(s1 + " " + s2);
+    } ELSE {
+        OUTPUT("HELLO WORLD", s1 + " " + s2);
+    }
+    OUTPUT("");
+    RETURN 0;
 }
-OUTPUT("");
 
-INPUT (n);
-x = 1;
-y = 1;
-i = 1;
-WHILE (i <= n) {
-    OUTPUT(x);
-    i = i + 1;
-    t = y;
-    y = x + y;
-    x = t;
+FUNCTION fibonacci (n, x, y) {
+    i = 1;
+    WHILE (i <= n) {
+        OUTPUT(x);
+        i = i + 1;
+        t = y;
+        y = x + y;
+        x = t;
+    }
+    OUTPUT("");
+    RETURN 0;
 }
-OUTPUT("");
 
-a = 1;
-b = 1;
-OUTPUT(a + 2 * (1 + 3) * b + a * b);
+FUNCTION calc (a, b) {
+    RETURN a + 2 * (1 + 3) * b + a * b;
+}
+
+OUTPUT("请输入INPUT函数的参数：");
+INPUT(ope);
+hw(ope);
+
+OUTPUT("请输入fibonacci的项数：");
+INPUT(n);
+OUTPUT("请输入fibonacci的前两项：");
+INPUT(x, y);
+OUTPUT("fibonacci序列：");
+fibonacci(n, x, y);
+
+OUTPUT("测试多级calc函数：");
+OUTPUT(calc(1, 1), calc(2, 2));
+OUTPUT(calc(calc(1, 1), calc(1, 1)));
+OUTPUT(calc(10, 10));

@@ -12,16 +12,43 @@ public:
     StatementsGroup ();
     ~StatementsGroup ();
 
-    void RunCode (const std::string& code);
-    void Program (const std::vector<Any>& program);
-    void If (const std::vector<Any>& if_bool_program);
-    void While (const std::vector<Any>& while_bool_program);
+    std::string Compile_PreFunction (const std::string& code);
+    Val  RunCode (std::string& code);
+    Val  Program (const std::vector<Any>& program);
+    Val  If (const std::vector<Any>& if_bool_program);
+    Val  While (const std::vector<Any>& while_bool_program);
     void Input (const std::vector<Any>& input);
     void Output (const std::vector<Any>& output);
+    Val Function (const std::vector<Any>& func);
+
+    void parse_If (const std::vector<Any>& program, int& l, int& r, std::vector<Any>& if_v);
+    void parse_While (const std::vector<Any>& program, int& l, int& r, std::vector<Any>& while_v);
+    void parse_Input (const std::vector<Any>& program, int& l, int& r, std::vector<Any>& input_v);
+    void parse_Output (const std::vector<Any>& program, int& l, int& r, std::vector<Any>& output_v);
+    void parse_Return (const std::vector<Any>& program, int& l, int& r, std::vector<Any>& program_v);
+    void parse_Statement (const std::vector<Any>& program, int& l, int& r, std::vector<Any>& program_v);
 private:
+    Lexical* la;    ///< 词法分析器
+    EvalTree* et;   ///< 语法树
+
+    /*! 变量集合，传进 et 中用来存放变量值 */
     std::map<std::string, Val> var_mp;
-    std::shared_ptr<Lexical> la;
-    std::shared_ptr<EvalTree> et;
+
+    /*! 函数被使用次数，用作标记为第几次使用来修整内部标识符后缀id */
+    std::map<std::string, int> be_used_times;
+
+    /*! @brief 一个函数名，对应一套参数列表、一套程序内容 
+
+        @param first            函数名 
+            - string 名字
+        @param second_first     参数列表 
+            - std::vector<Any> 由几个标识符组成，无分隔符
+        @param second_second    程序内容 
+            - std::vector<Any> 可直接放在 Program() 中运行的语句集
+
+        @details 例: FUNCTION add(a, b) {RETURN a + b;} 解析后为：
+            {add, {a b}, {RETURN a + b ;}} */
+    std::map<std::string, std::pair< std::vector<Any>,std::vector<Any> > > func_mp;
 };
 
 /**

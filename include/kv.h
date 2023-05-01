@@ -10,7 +10,7 @@
 enum TokenCode {
 	TK_UNDEF = 0,	///< undefined
 
-	/*! [1, 11] */
+	/*! [1, 13] */
 	KW_MAIN,		///< MAIN
 	KW_BEGIN,		///< {
 	KW_END,			///< }
@@ -21,9 +21,11 @@ enum TokenCode {
     KW_OUTPUT,      ///< OUTPUT
 	KW_THEN,		///< THEN
 	KW_FOR,			///< FOR
+    KW_FUNC,        ///< FUNCTION
+    KW_RETN,        ///< RETURN
 	KW_WHILE, 		///< WHILE
 
-	/*! [12, 17] */
+	/*! [14, 19] */
 	TK_COMMA,		///< ,
 	TK_SEMOCOLON,	///< ;
 	TK_POINT,		///< .
@@ -31,14 +33,14 @@ enum TokenCode {
 	TK_OPENPA,		///< (
 	TK_CLOSEPA,		///< )
 
-	/*! [18, 22] */
+	/*! [20, 24] */
 	TK_PLUS,		///< +
 	TK_MINUS,		///< -
 	TK_STAR,	 	///< *
 	TK_DIVIDE,		///< /
 	TK_MOD,         ///< %
 
-	/*! [23, 31] */
+	/*! [25, 33] */
 	TK_LT,			///< <
 	TK_LEQ,			///< <=
 	TK_EQ,			///< ==
@@ -50,16 +52,16 @@ enum TokenCode {
     TK_AND,         ///< &&
     TK_OR,          ///< ||
 
-	/*! [32, 34] */
+	/*! [34, 36] */
 	TK_INT,			///< int_variable
 	TK_DOUBLE, 		///< double_variable
     TK_STR,         ///< string_variable
 
-    /*! [35, 36] */
+    /*! [37, 38] */
     TK_QT,          ///< '
     TK_QTS,         ///< "
 
-	/*! [37, 37] */
+	/*! [39, 39] */
 	TK_IDENT		///< 标识符
 };
 

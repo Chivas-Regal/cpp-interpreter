@@ -31,10 +31,12 @@ public:
 
     Val Expression (const std::vector<Any>& words);
 private:
-    std::stack<EvalTreeNode*>   stk_num;    ///< 非运算符栈
-    std::stack<char>            stk_ope;    ///< 运算符栈
     std::map<std::string, Val>  var_mp;     ///< 变量名与Val的键值对
     Lexical*           la;                  ///< 分析器
+
+    /*! 遇到函数了，执行回调将出现到的函数调用部分（诸如 add(1, 2)）
+        回传进 StatementsGroup 的 Function() 内 获取返回值 */
+    std::function<Val(const std::vector<Any>& func)> callback;
 
     /**
      * @brief 合并数值节点
@@ -42,7 +44,7 @@ private:
      *          如果数值不够比如 -1 这种，会在左侧补0变成 0-1
      *          或者是运算符为单值运算符 !，也是补一个 0 
      */
-    void addNode () {
+    void addNode (std::stack<EvalTreeNode*>& stk_num, std::stack<char>& stk_ope) {
         EvalTreeNode *R = stk_num.top(); stk_num.pop();
         EvalTreeNode *L = nullptr;
         char ope = stk_ope.top(); stk_ope.pop();

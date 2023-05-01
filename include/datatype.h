@@ -33,6 +33,8 @@ public:
     Val (const std::string& _s) : type(STRING), string_value(_s) {}
     Val (const Val& that) : type(that.type), int_number(that.int_number), double_number(that.double_number), string_value(that.string_value) {}
 
+    std::string toString () const;
+
     friend std::ostream& operator << (std::ostream& os, const Val& v);
 };
 
@@ -68,6 +70,7 @@ public:
 	explicit Any (int _number) noexcept;
     explicit Any (double _number) noexcept;
     explicit Any (std::string str, int flag); // 区分开，这是加入常量字符串
+    explicit Any (const Val& v);
 	explicit Any (char ope) noexcept;
 	explicit Any (std::string var_name);
 
@@ -77,4 +80,6 @@ public:
     Val         number;    // type=NUMBER 有意义
 	char 		ope;       // type=OPE    有意义
 	std::string var;       // type=VAR    有意义
+
+    std::string toString () const;
 };

@@ -17,7 +17,13 @@ int main() {
     fin.close();
     program.pop_back();
 
+
+
     StatementsGroup *sg = new StatementsGroup();
     sg->RunCode(program);
     delete sg;
+    // Lexical *la = new Lexical();
+    // for (auto it : la->lexer(program)) {
+    //     std::cout << it << std::endl;
+    // }
 }

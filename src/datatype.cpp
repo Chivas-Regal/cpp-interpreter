@@ -121,6 +121,15 @@ std::ostream& operator << (std::ostream& os, const Val& v) {
     return os;
 }
 
+std::string Val::toString() const {
+    if (type == INT)
+        return std::to_string(int_number);
+    else if (type == DOUBLE)
+        return std::to_string(double_number);
+    else 
+        return "\"" + string_value + "\"";
+}
+
 Any::Any () noexcept:
 	type(UNDEF),
 	number(0)
@@ -152,6 +161,11 @@ Any::Any (std::string str, int flag):
     number(std::move(str))
 {}
 
+Any::Any (const Val& v) :
+    type(NUMBER),
+    number(v)
+{}
+
 std::ostream& operator << (std::ostream& os, const Any& v) {
     if (v.type == NUMBER)
         os << v.number;
@@ -160,4 +174,13 @@ std::ostream& operator << (std::ostream& os, const Any& v) {
     else
         os << v.var;
     return os;
+}
+
+std::string Any::toString() const {
+    if (type == OPE)
+        return std::string(1, ope);
+    else if (type == VAR)
+        return var;
+    else 
+        return number.toString();
 }

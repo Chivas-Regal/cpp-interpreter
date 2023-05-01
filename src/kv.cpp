@@ -34,16 +34,23 @@ TokenCode oneCharTokenMeaning (char c) {
  * @return TokenCode 关键字对应 TokenCode 里面的哪一项
 */
 TokenCode keyWordsID (const std::string& str) {
-	make_KV(str, "MAIN", 	KW_MAIN)
-	make_KV(str, "IF",	 	KW_IF)
-	make_KV(str, "ELIF",	KW_ELIF)
-	make_KV(str, "ELSE", 	KW_ELSE)
-	make_KV(str, "THEN", 	KW_THEN)
-	make_KV(str, "FOR", 	KW_FOR)
-	make_KV(str, "WHILE", 	KW_WHILE)
-	make_KV(str, "INPUT", 	KW_INPUT)
-	make_KV(str, "OUTPUT", 	KW_OUTPUT)
-	return TK_UNDEF;
+	make_KV(str, "MAIN",    	KW_MAIN)
+	make_KV(str, "IF",	    	KW_IF)
+	make_KV(str, "ELIF",    	KW_ELIF)
+	make_KV(str, "ELSE",     	KW_ELSE)
+	make_KV(str, "THEN", 	    KW_THEN)
+	make_KV(str, "FOR", 	    KW_FOR)
+	make_KV(str, "WHILE",   	KW_WHILE)
+	make_KV(str, "INPUT", 	    KW_INPUT)
+    make_KV(str, "FUNCTION",    KW_FUNC)
+	make_KV(str, "OUTPUT", 	    KW_OUTPUT)
+    make_KV(str, "{",           KW_BEGIN);
+    make_KV(str, "}",           KW_END);
+    make_KV(str, "RETURN",      KW_RETN);
+    make_KV(str, ";",           TK_SEMOCOLON);
+    make_KV(str, ",",           TK_COMMA);
+
+	return                      TK_UNDEF;
 }
 
 /**

@@ -113,7 +113,7 @@ void Lexical::parser_number(char ch) {
  */
 void Lexical::parser_word(char ch) {
     token = "";
-    while (std::isalpha(ch) || std::isdigit(ch)) {
+    while (std::isalpha(ch) || std::isdigit(ch) || ch == '_') {
         token += ch;
         ch = detect_str[detect_id ++];
     }
