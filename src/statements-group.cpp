@@ -1,4 +1,4 @@
-#include "../include/statements-group.h"
+#include "statements-group.h"
 
 /**
  * @brief 构造语句组

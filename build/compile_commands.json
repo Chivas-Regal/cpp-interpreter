@@ -21,6 +21,16 @@
 },
 {
   "directory": "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build",
+  "command": "/usr/bin/clang++ -Danalysers_EXPORTS -I\"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/include\" -I/usr/include/mysql -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fPIC -std=gnu++20 -o CMakeFiles/analysers.dir/src/lr1-parser.cpp.o -c \"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/lr1-parser.cpp\"",
+  "file": "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/lr1-parser.cpp"
+},
+{
+  "directory": "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build",
+  "command": "/usr/bin/clang++ -Danalysers_EXPORTS -I\"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/include\" -I/usr/include/mysql -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fPIC -std=gnu++20 -o CMakeFiles/analysers.dir/src/predictor-parser.cpp.o -c \"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/predictor-parser.cpp\"",
+  "file": "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/predictor-parser.cpp"
+},
+{
+  "directory": "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build",
   "command": "/usr/bin/clang++ -Danalysers_EXPORTS -I\"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/include\" -I/usr/include/mysql -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.0 -fPIC -std=gnu++20 -o CMakeFiles/analysers.dir/src/statements-group.cpp.o -c \"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/statements-group.cpp\"",
   "file": "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/statements-group.cpp"
 },

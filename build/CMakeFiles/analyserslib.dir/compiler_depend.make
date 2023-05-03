@@ -760,8 +760,14 @@ CMakeFiles/analyserslib.dir/main.cpp.o: /Users/snopzyz/Library/Mobile\ Documents
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stack \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/deque \
   /Users/snopzyz/Library/Mobile\ Documents/com~apple~CloudDocs/CLionProjects/analysers/include/statements-group.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/set
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/set \
+  /Users/snopzyz/Library/Mobile\ Documents/com~apple~CloudDocs/CLionProjects/analysers/include/predictor-parser.h \
+  /Users/snopzyz/Library/Mobile\ Documents/com~apple~CloudDocs/CLionProjects/analysers/include/lr1-parser.h
 
+
+/Users/snopzyz/Library/Mobile\ Documents/com~apple~CloudDocs/CLionProjects/analysers/include/lr1-parser.h:
+
+/Users/snopzyz/Library/Mobile\ Documents/com~apple~CloudDocs/CLionProjects/analysers/include/predictor-parser.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/set:
 

@@ -1,4 +1,4 @@
-#include "../include/datatype.h"
+#include "datatype.h"
 #include <iostream>
 
 Val operator + (const Val& a, const Val& b) {

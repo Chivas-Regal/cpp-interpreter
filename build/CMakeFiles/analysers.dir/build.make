@@ -125,10 +125,38 @@ CMakeFiles/analysers.dir/src/lexical.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/analysers.dir/src/lexical.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/lexical.cpp" -o CMakeFiles/analysers.dir/src/lexical.cpp.s
 
+CMakeFiles/analysers.dir/src/lr1-parser.cpp.o: CMakeFiles/analysers.dir/flags.make
+CMakeFiles/analysers.dir/src/lr1-parser.cpp.o: /Users/snopzyz/Library/Mobile\ Documents/com~apple~CloudDocs/CLionProjects/analysers/src/lr1-parser.cpp
+CMakeFiles/analysers.dir/src/lr1-parser.cpp.o: CMakeFiles/analysers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/analysers.dir/src/lr1-parser.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/analysers.dir/src/lr1-parser.cpp.o -MF CMakeFiles/analysers.dir/src/lr1-parser.cpp.o.d -o CMakeFiles/analysers.dir/src/lr1-parser.cpp.o -c "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/lr1-parser.cpp"
+
+CMakeFiles/analysers.dir/src/lr1-parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/analysers.dir/src/lr1-parser.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/lr1-parser.cpp" > CMakeFiles/analysers.dir/src/lr1-parser.cpp.i
+
+CMakeFiles/analysers.dir/src/lr1-parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/analysers.dir/src/lr1-parser.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/lr1-parser.cpp" -o CMakeFiles/analysers.dir/src/lr1-parser.cpp.s
+
+CMakeFiles/analysers.dir/src/predictor-parser.cpp.o: CMakeFiles/analysers.dir/flags.make
+CMakeFiles/analysers.dir/src/predictor-parser.cpp.o: /Users/snopzyz/Library/Mobile\ Documents/com~apple~CloudDocs/CLionProjects/analysers/src/predictor-parser.cpp
+CMakeFiles/analysers.dir/src/predictor-parser.cpp.o: CMakeFiles/analysers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/analysers.dir/src/predictor-parser.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/analysers.dir/src/predictor-parser.cpp.o -MF CMakeFiles/analysers.dir/src/predictor-parser.cpp.o.d -o CMakeFiles/analysers.dir/src/predictor-parser.cpp.o -c "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/predictor-parser.cpp"
+
+CMakeFiles/analysers.dir/src/predictor-parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/analysers.dir/src/predictor-parser.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/predictor-parser.cpp" > CMakeFiles/analysers.dir/src/predictor-parser.cpp.i
+
+CMakeFiles/analysers.dir/src/predictor-parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/analysers.dir/src/predictor-parser.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/predictor-parser.cpp" -o CMakeFiles/analysers.dir/src/predictor-parser.cpp.s
+
 CMakeFiles/analysers.dir/src/statements-group.cpp.o: CMakeFiles/analysers.dir/flags.make
 CMakeFiles/analysers.dir/src/statements-group.cpp.o: /Users/snopzyz/Library/Mobile\ Documents/com~apple~CloudDocs/CLionProjects/analysers/src/statements-group.cpp
 CMakeFiles/analysers.dir/src/statements-group.cpp.o: CMakeFiles/analysers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/analysers.dir/src/statements-group.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/analysers.dir/src/statements-group.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/analysers.dir/src/statements-group.cpp.o -MF CMakeFiles/analysers.dir/src/statements-group.cpp.o.d -o CMakeFiles/analysers.dir/src/statements-group.cpp.o -c "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/src/statements-group.cpp"
 
 CMakeFiles/analysers.dir/src/statements-group.cpp.i: cmake_force
@@ -145,6 +173,8 @@ analysers_OBJECTS = \
 "CMakeFiles/analysers.dir/src/eval-tree.cpp.o" \
 "CMakeFiles/analysers.dir/src/kv.cpp.o" \
 "CMakeFiles/analysers.dir/src/lexical.cpp.o" \
+"CMakeFiles/analysers.dir/src/lr1-parser.cpp.o" \
+"CMakeFiles/analysers.dir/src/predictor-parser.cpp.o" \
 "CMakeFiles/analysers.dir/src/statements-group.cpp.o"
 
 # External object files for target analysers
@@ -154,10 +184,12 @@ analysers_EXTERNAL_OBJECTS =
 /Users/snopzyz/Library/Mobile\ Documents/com~apple~CloudDocs/CLionProjects/analysers/lib/libanalysers.dylib: CMakeFiles/analysers.dir/src/eval-tree.cpp.o
 /Users/snopzyz/Library/Mobile\ Documents/com~apple~CloudDocs/CLionProjects/analysers/lib/libanalysers.dylib: CMakeFiles/analysers.dir/src/kv.cpp.o
 /Users/snopzyz/Library/Mobile\ Documents/com~apple~CloudDocs/CLionProjects/analysers/lib/libanalysers.dylib: CMakeFiles/analysers.dir/src/lexical.cpp.o
+/Users/snopzyz/Library/Mobile\ Documents/com~apple~CloudDocs/CLionProjects/analysers/lib/libanalysers.dylib: CMakeFiles/analysers.dir/src/lr1-parser.cpp.o
+/Users/snopzyz/Library/Mobile\ Documents/com~apple~CloudDocs/CLionProjects/analysers/lib/libanalysers.dylib: CMakeFiles/analysers.dir/src/predictor-parser.cpp.o
 /Users/snopzyz/Library/Mobile\ Documents/com~apple~CloudDocs/CLionProjects/analysers/lib/libanalysers.dylib: CMakeFiles/analysers.dir/src/statements-group.cpp.o
 /Users/snopzyz/Library/Mobile\ Documents/com~apple~CloudDocs/CLionProjects/analysers/lib/libanalysers.dylib: CMakeFiles/analysers.dir/build.make
 /Users/snopzyz/Library/Mobile\ Documents/com~apple~CloudDocs/CLionProjects/analysers/lib/libanalysers.dylib: CMakeFiles/analysers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library \"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/lib/libanalysers.dylib\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared library \"/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/lib/libanalysers.dylib\""
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/analysers.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

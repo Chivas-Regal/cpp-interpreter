@@ -1,5 +1,5 @@
-#include "../include/lexical.h"
-#include "../include/kv.h"
+#include "lexical.h"
+#include "kv.h"
 
 #include <iostream>
 

@@ -262,6 +262,54 @@ src/lexical.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/lexical.cpp.s
 .PHONY : src/lexical.cpp.s
 
+src/lr1-parser.o: src/lr1-parser.cpp.o
+.PHONY : src/lr1-parser.o
+
+# target to build an object file
+src/lr1-parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/lr1-parser.cpp.o
+.PHONY : src/lr1-parser.cpp.o
+
+src/lr1-parser.i: src/lr1-parser.cpp.i
+.PHONY : src/lr1-parser.i
+
+# target to preprocess a source file
+src/lr1-parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/lr1-parser.cpp.i
+.PHONY : src/lr1-parser.cpp.i
+
+src/lr1-parser.s: src/lr1-parser.cpp.s
+.PHONY : src/lr1-parser.s
+
+# target to generate assembly for a file
+src/lr1-parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/lr1-parser.cpp.s
+.PHONY : src/lr1-parser.cpp.s
+
+src/predictor-parser.o: src/predictor-parser.cpp.o
+.PHONY : src/predictor-parser.o
+
+# target to build an object file
+src/predictor-parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/predictor-parser.cpp.o
+.PHONY : src/predictor-parser.cpp.o
+
+src/predictor-parser.i: src/predictor-parser.cpp.i
+.PHONY : src/predictor-parser.i
+
+# target to preprocess a source file
+src/predictor-parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/predictor-parser.cpp.i
+.PHONY : src/predictor-parser.cpp.i
+
+src/predictor-parser.s: src/predictor-parser.cpp.s
+.PHONY : src/predictor-parser.s
+
+# target to generate assembly for a file
+src/predictor-parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/src/predictor-parser.cpp.s
+.PHONY : src/predictor-parser.cpp.s
+
 src/statements-group.o: src/statements-group.cpp.o
 .PHONY : src/statements-group.o
 
@@ -311,6 +359,12 @@ help:
 	@echo "... src/lexical.o"
 	@echo "... src/lexical.i"
 	@echo "... src/lexical.s"
+	@echo "... src/lr1-parser.o"
+	@echo "... src/lr1-parser.i"
+	@echo "... src/lr1-parser.s"
+	@echo "... src/predictor-parser.o"
+	@echo "... src/predictor-parser.i"
+	@echo "... src/predictor-parser.s"
 	@echo "... src/statements-group.o"
 	@echo "... src/statements-group.i"
 	@echo "... src/statements-group.s"

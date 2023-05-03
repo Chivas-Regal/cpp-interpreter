@@ -9,6 +9,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/analysers.dir/src/kv.cpp.o.d"
   "CMakeFiles/analysers.dir/src/lexical.cpp.o"
   "CMakeFiles/analysers.dir/src/lexical.cpp.o.d"
+  "CMakeFiles/analysers.dir/src/lr1-parser.cpp.o"
+  "CMakeFiles/analysers.dir/src/lr1-parser.cpp.o.d"
+  "CMakeFiles/analysers.dir/src/predictor-parser.cpp.o"
+  "CMakeFiles/analysers.dir/src/predictor-parser.cpp.o.d"
   "CMakeFiles/analysers.dir/src/statements-group.cpp.o"
   "CMakeFiles/analysers.dir/src/statements-group.cpp.o.d"
 )

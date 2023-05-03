@@ -1,0 +1,25 @@
+A ::= B C
+B ::= J B | $
+C ::= D C | $
+D ::= F | G | E; 
+E ::= N | I | K
+F ::= while ( W ) { C } 
+G ::= if ( W ) { C } H
+H ::= else { C } | elif ( W ) { C } H | $
+I ::= input( M ) 
+K ::= output( M ) 
+J ::= function R (Q) {C r N;} 
+L ::= R ( M ) 
+M ::= P Y 
+Y ::= ,PY | $
+N ::= P O
+O ::= $ | +P O | -P O | *P O | /P O | =P O
+P ::= R | U | L | "R"
+Q ::= R Q | $
+R ::= T Z
+Z ::= T Z | V Z | $
+T ::= a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z
+V ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 
+U ::= VU | V 
+W ::= N X N
+X ::= == | <= | != | >= | < | >

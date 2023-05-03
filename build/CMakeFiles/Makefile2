@@ -83,12 +83,12 @@ clean: CMakeFiles/analyserslib.dir/clean
 CMakeFiles/analysers.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/analysers.dir/build.make CMakeFiles/analysers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build/CMakeFiles" --progress-num=1,2,3,4,5,6 "Built target analysers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8 "Built target analysers"
 .PHONY : CMakeFiles/analysers.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/analysers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build/CMakeFiles" 6
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build/CMakeFiles" 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/analysers.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build/CMakeFiles" 0
 .PHONY : CMakeFiles/analysers.dir/rule
@@ -109,12 +109,12 @@ CMakeFiles/analysers.dir/clean:
 CMakeFiles/analyserslib.dir/all: CMakeFiles/analysers.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyserslib.dir/build.make CMakeFiles/analyserslib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyserslib.dir/build.make CMakeFiles/analyserslib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build/CMakeFiles" --progress-num=7,8 "Built target analyserslib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build/CMakeFiles" --progress-num=9,10 "Built target analyserslib"
 .PHONY : CMakeFiles/analyserslib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/analyserslib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build/CMakeFiles" 8
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build/CMakeFiles" 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/analyserslib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/snopzyz/Library/Mobile Documents/com~apple~CloudDocs/CLionProjects/analysers/build/CMakeFiles" 0
 .PHONY : CMakeFiles/analyserslib.dir/rule
